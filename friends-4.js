@@ -1,0 +1,35 @@
+// ৪. একটা ফাংশন লিখবে। এই ফাংশনের নাম হবে bestFriend তারপর সেই ফাংশনে ইনপুট প্যারামিটার হিসেবে একটা array নিবে। সেই array এর মধ্যে তোমার সব ফ্রেন্ডের নাম থাকবে। এখন তোমার কাজ হচ্ছে যে ফ্রেন্ড এর নাম সবচেয়ে বড় সেই ফ্রেন্ড এর নাম রিটার্ন করে দেয়া। এই ক্ষেত্রে তুমি নামটা অর্থাৎ ফ্রেন্ডের নাম (স্ট্রিং) রিটার্ন করতে হবে। 
+
+
+const frindNmane = ['abir', 'hasan', 'tish the garet', 'sanjida', 'abirhasan'];
+function bestFriends(nambrs){
+    let bingNumber = " ";
+    for(let i = 0; i < nambrs.length; i++){
+        let elemant = nambrs[i];
+        if(bingNumber.length < elemant.length){
+            bingNumber = elemant;
+        }
+    }
+    return bingNumber;
+}
+
+let bigBestFrend = bestFriends(frindNmane);
+console.log(bigBestFrend);
+
+
+
+
+
+
+// const frindNmane = ['abir++', 'hasan+++', 'sanji', 'tish the garet+++++', 'abirhasan'];
+// let bigFrindName = [];
+
+// for(const frend of frindNmane){
+//     if(frend.length > bigFrindName.length){
+//         bigFrindName = frend;
+//     }
+
+// }
+
+// console.log(bigFrindName);
+
